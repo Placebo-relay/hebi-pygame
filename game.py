@@ -131,6 +131,7 @@ class SnakeGame:
                 # Event handling
                 for event in pygame.event.get():
                     if event.type == pygame.QUIT:
+                        done = TRUE
                         game_over = True
                         pygame.quit()
                         sys.exit()
