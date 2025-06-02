@@ -1,12 +1,12 @@
+import random
+import sys
+import os
+import json
 from screeninfo import get_monitors
 import pygame
 import win32api
 import win32con
 import win32gui
-import random
-import sys
-import os
-import json
 from pygame import gfxdraw
 
 class Colors:
