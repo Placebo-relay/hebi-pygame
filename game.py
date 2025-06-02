@@ -1,7 +1,3 @@
-"""
-ООП версия прозрачной змейки (тестирована локальна, запушена через ветку oop в main)
-"""
-
 from screeninfo import get_monitors
 import pygame
 import win32api
@@ -112,12 +108,12 @@ class SnakeGame:
                     
                     for event in pygame.event.get():
                         if event.type == pygame.QUIT:
-                            game_over = True
-                            game_close = False
+                            pygame.quit()
+                            sys.exit()
                         if event.type == pygame.KEYDOWN:
                             if event.key == pygame.K_q:
-                                game_over = True
-                                game_close = False
+                                pygame.quit()
+                                sys.exit()
                             if event.key == pygame.K_c:
                                 game_close = False
                                 high_score_processed = False
@@ -131,14 +127,12 @@ class SnakeGame:
                 # Event handling
                 for event in pygame.event.get():
                     if event.type == pygame.QUIT:
-                        done = TRUE
-                        game_over = True
                         pygame.quit()
                         sys.exit()
                     if event.type == pygame.KEYDOWN:
                         if event.key == pygame.K_q:  # Global quit
-                            game_over = True
-                            done = True
+                            pygame.quit()
+                            sys.exit()
                         elif event.key == pygame.K_p:  # Pause toggle
                             paused = not paused
                         elif not paused:
