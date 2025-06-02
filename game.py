@@ -138,6 +138,7 @@ class SnakeGame:
                     if event.type == pygame.KEYDOWN:
                         if event.key == pygame.K_q:  # Global quit
                             game_over = True
+                            done = True
                         elif event.key == pygame.K_p:  # Pause toggle
                             paused = not paused
                         elif not paused:
