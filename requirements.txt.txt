@@ -1,3 +1,0 @@
-pygame
-pywin32
-screeninfo

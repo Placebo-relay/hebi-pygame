@@ -1,0 +1,6 @@
+python 3.13
+pygame 2.6.1
+pywin32 310
+screeninfo 0.8.1
+#	ONLY FOR MAKING YOUR OWN EXE
+# 		pyinstaller  6.13.0 
